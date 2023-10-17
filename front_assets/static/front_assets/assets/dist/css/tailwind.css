@@ -341,6 +341,7 @@ img, video {
 
 .top-bar {
   z-index: 10;
+  height: 22.5%;
   width: 100%;
   --tw-border-opacity: 1;
   border-bottom-width: 1px;

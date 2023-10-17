@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     #
     # Libs
     'advanced_filters',
-    'debug_toolbar',
+    # 'debug_toolbar',
     'django_admin_listfilter_dropdown',
     'django_browser_reload',
     'django_object_actions',
@@ -68,7 +68,7 @@ MIDDLEWARE = [
 
     'home.middlewares.ModelAndAppNameMiddleware',
     'crum.CurrentRequestUserMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 DEV = config('DEV', default=False, cast=bool)

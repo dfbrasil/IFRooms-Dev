@@ -13,8 +13,7 @@
 	<a class="px-16 pt-0 pb-16 md2:pt-32 flex items-center logo border-b border-neutral-05 relative"
 		href="{% url 'home' %}">
 		<!-- <img class="w-[190px]" src="{% static 'home/assets/src/images/logo.png' %}"> -->
-		<img class="logo-principal" src="{% static 'front_assets/assets/src/images/logo-fechada.png' %}">
-		Boillerplate
+		<img class="logo-principal" src="{% static 'front_assets/assets/src/images/logoifrooms.svg' %}">
 	</a>
 
 	<ul class="sidebar-items" js-menu-lista>
@@ -82,7 +81,7 @@
 			</a>
 		{% endif %}
 
-		{% if is_dev %}
+		<!-- {% if is_dev %}
 			<a href="{% url 'design_system' %}" target="_blank" js-lista-name="controladoria"
 				class="h-40 whitespace-nowrap menu-item group">
 				<p class="inline-flex text-white font-medium text-sm leading-100">Design System</p>
@@ -107,22 +106,22 @@
 				class="h-40 whitespace-nowrap menu-item group">
 				<p class="inline-flex text-white font-medium text-sm leading-100">API docs - Redoc</p>
 			</a>
-		{% endif %}
+		{% endif %} -->
 	</div>
 
 	<div class="sidebar-footer ">
 		<div class="user ">
 			{% if user.is_authenticated %}
 				<a class="foto relative" href="#">
-					<svg class="icone-hover">
+					<!-- <svg class="icone-hover">
 						<use xlink:href="#icone-camera"></use>
-					</svg>
+					</svg> -->
 				</a>
 			{% else %}
 				<a class="foto relative bg-primary-pure-light" href="#">
-					<svg class="icone-hover">
+					<!-- <svg class="icone-hover">
 						<use xlink:href="#icone-camera"></use>
-					</svg>
+					</svg> -->
 				</a>
 			{% endif %}
 
